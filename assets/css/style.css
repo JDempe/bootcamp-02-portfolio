@@ -1,0 +1,151 @@
+* {
+   color: white;
+}
+
+header {
+   padding: 10px 0px;
+   position: fixed;
+   top: 0;
+   display: flex;
+   height: 75px;
+   width: 100%;
+   background-color: rgba(0, 0, 0, 0.5);
+
+}
+
+header div {
+   display: inline-flex;
+   vertical-align: middle;
+   align-items: center;
+}
+
+h1 {
+   margin: 0px;
+   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+h2 {
+   display: flex;
+   color: white;
+   border-bottom: 10px solid;
+   border-image-slice: 1;
+   border-width: 5px;
+   border-image-source: linear-gradient(to right, red, purple);
+   width: 200px;
+   justify-content: center;
+}
+
+header li {
+   display: inline-flex;
+}
+
+body {
+   background-color: #301948;
+   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 1600 800'%3E%3Cg stroke='%23000' stroke-width='66.7' stroke-opacity='0.05' %3E%3Ccircle fill='%23301948' cx='0' cy='0' r='1800'/%3E%3Ccircle fill='%232d1946' cx='0' cy='0' r='1700'/%3E%3Ccircle fill='%232b1844' cx='0' cy='0' r='1600'/%3E%3Ccircle fill='%23281841' cx='0' cy='0' r='1500'/%3E%3Ccircle fill='%2326183f' cx='0' cy='0' r='1400'/%3E%3Ccircle fill='%2323173d' cx='0' cy='0' r='1300'/%3E%3Ccircle fill='%2321173b' cx='0' cy='0' r='1200'/%3E%3Ccircle fill='%231e1739' cx='0' cy='0' r='1100'/%3E%3Ccircle fill='%231c1637' cx='0' cy='0' r='1000'/%3E%3Ccircle fill='%23191634' cx='0' cy='0' r='900'/%3E%3Ccircle fill='%23171532' cx='0' cy='0' r='800'/%3E%3Ccircle fill='%23141530' cx='0' cy='0' r='700'/%3E%3Ccircle fill='%2311142e' cx='0' cy='0' r='600'/%3E%3Ccircle fill='%230f142c' cx='0' cy='0' r='500'/%3E%3Ccircle fill='%230c132a' cx='0' cy='0' r='400'/%3E%3Ccircle fill='%23091228' cx='0' cy='0' r='300'/%3E%3Ccircle fill='%23061126' cx='0' cy='0' r='200'/%3E%3Ccircle fill='%23021024' cx='0' cy='0' r='100'/%3E%3C/g%3E%3C/svg%3E");
+   /* background by SVGBackgrounds.com */
+   background-attachment: fixed;
+   background-size: cover;
+   background-position: center;
+}
+
+.sociallinks {
+   margin: 0px;
+}
+
+/* Width setting so that icons don't shift when they expand */
+.sociallinks li {
+   width: 50px;
+}
+
+/* Fixed Icon Size */
+.sociallinks img {
+   width: 42px;
+   height: 42px;
+}
+
+/* Icon Expand when Hovered */
+.sociallinks img:hover {
+   width: 46px;
+   height: 46px;
+}
+
+/* NAVIGATION BAR IN HEADER */
+nav {
+   display: inline-flex;
+   justify-content: end;
+   align-items: center;
+   padding-right: 20px;
+}
+
+nav ul {
+   padding: 0px;
+   margin: 0px;
+}
+
+nav li {
+   margin: 0px 15px;
+   color: white;
+}
+
+nav a {
+   text-decoration: none;
+   font-size: 25px;
+   font-family: 'Courier New', Courier, monospace;
+   color: white;
+}
+
+nav a:link {
+   color: white;
+}
+
+nav a:hover {
+   color: orange;
+}
+
+#profile {
+   display: flex;
+   margin: 250px 0px 150px 0px;
+}
+
+.profilepic {
+   display: inline-flex;
+   justify-content: end;
+
+}
+
+.profilepic img {
+   width: 300px;
+   height: 300px;
+}
+
+.aboutme {
+   color: white;
+   display: inline-flex;
+   justify-content: start;
+}
+
+#skills {
+   display: flex;
+   justify-content: center;
+}
+
+#skills img {
+   height: 100px;
+   width: auto;
+   margin: 10px;
+}
+
+/* TODO Solidify Grid so expanding photo doesnt cause bouncing */
+#skills img:hover {
+   height: 100px;
+   width: auto;
+}
+
+.sectiontitle {
+   display: flex;
+   justify-content: center;
+}
+
+footer {
+   margin: 100px;
+}
