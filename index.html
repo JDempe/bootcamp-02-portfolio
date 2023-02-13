@@ -14,10 +14,9 @@
       <link href="./assets/css/style.css" rel="stylesheet">
    </head>
    <body>
-      <header>
+      <header class="container-fluid">
          <!-- Top left, initials, socials -->
-         <div class="col-lg-6">
-
+         <div class="col">
             <ul class="sociallinks">
                <li><a href="https://github.com/JDempe" target="_blank">
                      <img
@@ -33,7 +32,7 @@
             </ul>
          </div>
          <!-- Top right, Links to page (navigation) -->
-         <nav class="col-lg-6">
+         <nav class="col">
             <ul>
                <li><a href="#profile">Profile</a></li>
                <li><a href="#skills">Skills</a></li>
@@ -43,15 +42,17 @@
       </header>
 
       <!-- Section: Profile -->
-      <section id="profile">
+      <section id="profile" class="d-flex justify-content-center">
          <!-- Profile Picture -->
-         <div class="col-lg-5 profilepic">
+         <div class="col-3 profilepic">
             <img src="./assets/images/profilepic.png">
          </div>
          <!-- Hello, Name, About Me -->
-         <div class="col-lg-7 aboutme">
+         <div class="col-5 aboutme">
+            <p><span>Hello, World!</span>&nbsp;My name is</p>
             <h1>Joshua Dempe</h1>
-            <p>Hello my name is Joshua Dempe</p>
+            <p id="changeText"></p>
+            <p class="mystory">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis, deleniti iusto numquam cum omnis libero eius ducimus, et dicta quis quam harum iure delectus tempora ad saepe autem iste eos.</p>
          </div>
       </section>
       <div class="sectiontitle"><h2>Skills</h2></div>
@@ -74,5 +75,6 @@
          integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
          crossorigin="anonymous">
       </script>
+      <script src="./assets/js/script.js"></script>
    </body>
 </html>
