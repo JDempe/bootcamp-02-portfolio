@@ -6,18 +6,15 @@
       <title>JDempe Profile</title>
       <link href="./assets/css/reset.css" rel="stylesheet">
       <link
-         href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
-         rel="stylesheet"
-         integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
-         crossorigin="anonymous">
-
+         href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap-grid.min.css"
+         rel="stylesheet">
       <link href="./assets/css/style.css" rel="stylesheet">
    </head>
    <body>
       <header class="container-fluid">
          <!-- Top left, initials, socials -->
-         <div class="col">
-            <ul class="sociallinks">
+         <div id="socials" class="col">
+            <ul>
                <li><a href="https://github.com/JDempe" target="_blank">
                      <img
                         src="./assets/images/github_icon_white.svg"
@@ -42,17 +39,21 @@
       </header>
 
       <!-- Section: Profile -->
+      <h1 class="">Joshua Dempe Portfolio</h1>
       <section id="profile" class="d-flex justify-content-center">
          <!-- Profile Picture -->
-         <div class="col-3 profilepic">
+         <div id="profilepic" class="col-3">
             <img src="./assets/images/profilepic.png">
          </div>
          <!-- Hello, Name, About Me -->
-         <div class="col-5 aboutme">
+         <div id="aboutme" class="col-5">
             <p><span>Hello, World!</span>&nbsp;My name is</p>
-            <h1>Joshua Dempe</h1>
+            <p class="name">Joshua Dempe</p>
             <p id="changeText"></p>
-            <p class="mystory">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis, deleniti iusto numquam cum omnis libero eius ducimus, et dicta quis quam harum iure delectus tempora ad saepe autem iste eos.</p>
+            <p class="mystory">Lorem ipsum dolor sit amet, consectetur
+               adipisicing elit. Debitis, deleniti iusto numquam cum omnis
+               libero eius ducimus, et dicta quis quam harum iure delectus
+               tempora ad saepe autem iste eos.</p>
          </div>
       </section>
       <div class="sectiontitle"><h2>Skills</h2></div>
@@ -70,11 +71,6 @@
       <footer>
 
       </footer>
-      <script
-         src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
-         integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
-         crossorigin="anonymous">
-      </script>
       <script src="./assets/js/script.js"></script>
    </body>
 </html>
