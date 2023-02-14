@@ -24,19 +24,25 @@ h1 {
    margin: 0 !important;
    clip: rect(1px, 1px, 1px, 1px);
    /* Credit: https://wdn.unl.edu/page-title-h1-best-practices */
+   /* There is no logical place to put a h1 heading, but to keep with accessibility and SEO best practices this adds an unseen h1 */
 }
 
 h2 {
-   display: flex;
+   font-size: 40px;
+   display: inline-flex;
    border-bottom: 10px solid;
    border-image-slice: 1;
    border-width: 5px;
    border-image-source: linear-gradient(to right, red, purple);
-   width: 200px;
+   width: 225px;
+   height: fit-content;
    justify-content: center;
+   align-self: flex-end;
+   margin: 0px 0px 40px 0px;
+   padding: 10px;
 }
 
-/* HEADER - SOCIALS AND NAVIGATION */
+/* HEADER - SOCIALS AND PAGE NAVIGATION */
 header {
    padding: 5px 0px;
    position: fixed;
@@ -45,6 +51,7 @@ header {
    height: 60px;
    background-color: rgba(0, 0, 0, 0.65);
    backdrop-filter: blur(20px);
+   z-index: 9;
 }
 
 #socials {
@@ -53,7 +60,7 @@ header {
    align-items: center;
 }
 
-#socials ul{
+#socials ul {
    display: flex;
 }
 
@@ -89,7 +96,6 @@ nav {
    display: inline-flex;
    justify-content: end;
    align-items: center;
-   padding-right: 20px;
 }
 
 nav ul {
@@ -120,8 +126,9 @@ nav a:hover {
 /* PROFILE SECTION - Profile Picture and About Me */
 #profile {
    display: flex;
-   margin: 200px 0px 150px 0px; 
-   /* TODO Make the profile one full viewheight? */
+   height: 100vh;
+   justify-content: center;
+   align-items: center;
 }
 
 #profilepic {
@@ -150,7 +157,7 @@ nav a:hover {
    color: orange;
 }
 
-#aboutme .name{
+#aboutme .name {
    font-size: 40px;
    margin: 10px 0px 5px 0px;
 }
@@ -161,25 +168,19 @@ nav a:hover {
 
 /* SKILLS SECTION */
 #skills {
-   display: flex;
-   justify-content: center;
+   display: grid;
+   height: 100vh;
+}
+
+#skills section {
+align-self: flex-start;
 }
 
 #skills img {
    height: 100px;
    width: auto;
    margin: 10px;
-}
-
-/* TODO Solidify Grid so expanding photo doesn't cause bouncing */
-#skills img:hover {
-   height: 100px;
-   width: auto;
-}
-
-.sectiontitle {
-   display: flex;
-   justify-content: center;
+   padding: 10px;
 }
 
 footer {
