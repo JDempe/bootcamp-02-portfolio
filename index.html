@@ -12,9 +12,9 @@
       <link href="./assets/css/hover.css" rel="stylesheet">
    </head>
    <body>
-      <header class="container-fluid gx-0">
+      <header>
          <!-- Top left, initials, socials -->
-         <div id="socials" class="col">
+         <div id="socials">
             <ul>
                <li><a href="https://github.com/JDempe" target="_blank">
                      <img
@@ -27,10 +27,16 @@
                         src="./assets/images/linkedin_icon_white.svg"
                         alt="LinkedIn Link">
                   </a></li>
+               <li><a href="mailto:josh.dempe.93@gmail.com"
+                     target="_blank">
+                     <img
+                        src="./assets/images/email_icon.png"
+                        alt="Email Redirect Link">
+                  </a></li>
             </ul>
          </div>
          <!-- Top right, Links to page (navigation) -->
-         <nav class="col">
+         <nav>
             <ul>
                <li><a href="#profile">Profile</a></li>
                <li><a href="#skills">Skills</a></li>
@@ -40,98 +46,97 @@
       </header>
       <h1>Joshua Dempe Portfolio</h1>
       <!-- SECTION: Profile -->
-      <section id="profile" class="container-fluid gx-0">
+      <section id="profile" class="section-wrap">
          <!-- Profile Picture -->
-         <div id="profilepic" class="col-3">
+         <div id="profilepic">
             <img src="./assets/images/profilepic.png">
          </div>
          <!-- Hello, Name, About Me -->
-         <div id="aboutme" class="col-5">
+         <div id="aboutme">
             <p><span>Hello, World!</span>&nbsp;My name is</p>
             <p class="name">Joshua Dempe</p>
             <p id="changeText"></p>
-            <p class="mystory">Lorem test ipsum dolor sit amet, consectetur
-               adipisicing elit. Debitis, deleniti iusto numquam cum omnis
-               libero eius ducimus, et dicta quis quam harum iure delectus
-               tempora ad saepe autem iste eos.
-               <br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad
-               inventore ipsam dolorem esse! Pariatur aliquam sunt
-               necessitatibus reprehenderit animi officiis, voluptatem vero hic
-               fugit ullam architecto placeat porro? Blanditiis, ducimus?
-               <br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad
-               inventore ipsam dolorem esse! Pariatur aliquam sunt
-               necessitatibus reprehenderit animi officiis, voluptatem vero hic
-               fugit ullam architecto placeat porro? Blanditiis, ducimus?
-               <br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad
-               inventore ipsam dolorem esse! Pariatur aliquam sunt
-               necessitatibus reprehenderit animi officiis, voluptatem vero hic
-               fugit ullam architecto placeat porro? Blanditiis, ducimus?
+            <p class="mystory border">Ever since I was a kid, I have loved all
+               things technology. That's why I went to school for Mechanical
+               Engineering. After college, I worked in Air Force Research Labs
+               as an engineer for six years. I have gotten to work on so many
+               incredible projects with so many amazing teams. But I always had
+               a feeling that it wasn't my passion. So, six years in I decided
+               to change careers. I became a software test engineer so that I
+               could work side by side with a team of talented developers every
+               day. And now, I am taking the next step and becoming a developer
+               myself. I am currently learning full stack web development skills
+               through the Coding Bootcamp while still working full-time as a
+               test engineer. And I couldn't be more excited for what's next!
             </p>
          </div>
       </section>
 
       <!-- SECTION: Skills -->
-      <section id="skills" class="container-fluid gx-0">
-         <div class="d-flex gx-0 justify-content-center"><h2>Skills</h2></div>
-         <section class="row gx-0 justify-content-center skillstest">
+      <!-- TODO NESTED SECTION NEEDS FIXED -->
+      <section id="skills" class="section-wrap">
+         <h2>Skills</h2>
+         <section class="content-wrap">
             <!-- HTML ICON -->
-            <div class="container skillbadge">
+            <div class="skillbadge">
                <img class="hvr-grow-rotate" src="./assets/images/html_icon.png">
                <p>HTML</p>
             </div>
             <!-- CSS ICON -->
-            <div class="container skillbadge">
+            <div class="skillbadge">
                <img class="hvr-grow-rotate" src="./assets/images/css_icon.svg">
                <p>CSS</p>
             </div>
             <!-- JavaScript ICON -->
-            <div class="container skillbadge">
+            <div class="skillbadge">
                <img class="hvr-grow-rotate" src="./assets/images/js_icon.png">
                <p>JavaScript</p>
             </div>
             <!-- Bootstrap ICON -->
-            <div class="container skillbadge">
+            <div class="skillbadge">
                <img class="hvr-grow-rotate"
                   src="./assets/images/bootstrap_icon.png">
                <p>Bootstrap</p>
             </div>
-            <!-- jQuery ICON -->
-            <div class="container skillbadge">
+            <!--
+            <!- - jQuery ICON - ->
+            <div class="skillbadge">
                <img class="hvr-grow-rotate"
                   src="./assets/images/jquery_icon.png">
                <p>jQuery</p>
             </div>
-            <!-- Node.js ICON -->
-            <div class="container skillbadge">
+            <!- - Node.js ICON - ->
+            <div class="skillbadge">
                <img class="hvr-grow-rotate" src="./assets/images/node_icon.png">
                <p>Node.js</p>
             </div>
-            <!-- MongoDB ICON -->
-            <div class="container skillbadge">
+            <!- - MongoDB ICON - ->
+            <div class="skillbadge">
                <img class="hvr-grow-rotate"
                   src="./assets/images/mongodb_icon.png">
                <p>MongoDB</p>
             </div>
-            <!-- React ICON -->
-            <div class="container skillbadge">
+            <!- - React ICON - ->
+            <div class="skillbadge">
                <img class="hvr-grow-rotate"
                   src="./assets/images/react_icon.svg.png">
                <p>React</p>
             </div>
+            -->
             <!-- Docker ICON -->
-            <div class="container skillbadge">
+            <div class="skillbadge">
                <img class="hvr-grow-rotate"
                   src="./assets/images/docker_icon.png">
                <p>Docker</p>
             </div>
             <!-- Git ICON -->
-            <div class="container skillbadge">
+            <div class="skillbadge">
                <img class="hvr-grow-rotate"
                   src="./assets/images/git_icon_multicolor.svg">
                <p>Git</p>
             </div>
             <!-- Atlassian ICON -->
-            <div class="container skillbadge">
+            <div class="skillbadge">
                <img class="hvr-grow-rotate"
                   src="./assets/images/atlassian_icon.png">
                <p>Atlassian</p>
@@ -140,12 +145,70 @@
          </section>
       </section>
 
-      <!-- SECTION: Projects -->
-      <section id="projects" class="container-fluid gx-0">
-         <div class="d-flex justify-content-center"><h2>Projects</h2></div>
-      </section>
-      <footer>
+      <!-- SECTION: Projects  -->
+      <div id="projects" class="section-wrap">
+         <!-- Title -->
+         <h2>Projects</h2>
+         <!-- All Content -->
+         <section class="content-wrap">
+            <!-- Project Tile -->
+            <article class="border firstproject">
+               <h3>My Portfolio</h3>
+               <p>My portfolio that will evolve as I gain more skills!</p>
+               <a>
+                  <img
+                     src="./assets/images/Time-PNG-HD-Quality.png"
+                     class="placeholder hvr-pulse-shrink"/>
+               </a>
+            </article>
+            <!-- Project Tile -->
+            <article class="border">
+               <h3>Horiseon Refactor</h3>
+               <p>A refactored site with improved accessibility and SEO!</p>
+               <a
+                  href="https://jdempe.github.io/bootcamp-01-horiseon-refactor/"
+                  target=_blank>
+                  <img
+                     src="./assets/images/jdempe.github.io_bootcamp-01-horiseon-refactor_.png"/>
+               </a>
+            </article>
+            <!-- Project Tile -->
+            <article class="border">
+               <h3>Prework Study Guide</h3>
+               <p>A study guide for any beginners learning web development! </p>
+               <a
+                  href="https://jdempe.github.io/bootcamp-00-prework-study-guide/"
+                  target=_blank>
+                  <img
+                     src="./assets/images/jdempe.github.io_bootcamp-00-prework-study-guide_.png"/>
+               </a>
+            </article>
 
+            <!-- Project Tile -->
+            <article class="border">
+               <h3>Future Project</h3>
+               <p>Great things to come!</p>
+               <a>
+                  <img
+                     src="./assets/images/Time-PNG-HD-Quality.png"
+                     class="placeholder hvr-pulse-shrink"/>
+               </a>
+            </article>
+            <!-- Project Tile -->
+            <article class="border">
+               <h3>Future Project</h3>
+               <p>Great things to come!</p>
+               <a>
+                  <img
+                     src="./assets/images/Time-PNG-HD-Quality.png"
+                     class="placeholder hvr-pulse-shrink"/>
+               </a>
+            </article>
+         </section>
+      </div>
+
+      <footer class="section-wrap">
+         <p> © Made with blood, sweat, and a lot of tears by Joshua Dempe</p>
       </footer>
       <script src="./assets/js/script.js"></script>
    </body>

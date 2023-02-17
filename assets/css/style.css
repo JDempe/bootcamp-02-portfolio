@@ -3,6 +3,30 @@
    font-family: "Cascadia Code", Georgia, Times, 'Times New Roman', serif;
 }
 
+/* REUSED STYLES */
+/* Red to Purple Gradient Border (Just Add Border Sides) */
+.border, h1, h2, h3{
+   border-style: solid;
+   border-image-slice: 1;
+   border-image-source: linear-gradient(to right, red, purple);
+}
+
+/* Section wrap, includes content and heading */
+.section-wrap{
+   display: block;
+   text-align: center;
+   margin: 10vh 15%;
+}
+
+/* Wrapping for the sections containing the actual content (excludes headings) */
+.content-wrap{
+   display: flex;
+   justify-content: space-evenly;
+   flex-wrap: wrap;
+   width: 100%;   
+}
+
+/* SEMANTIC ELEMENT STYLES */
 body {
    background-image: url(../images/rainbow-vortex.svg);
    /* background by SVGBackgrounds.com */
@@ -16,7 +40,6 @@ h1 {
    font-size: 0;
    width: 1px;
    height: 1px;
-   display: inline-block;
    overflow: hidden;
    position: absolute !important;
    border: 0 !important;
@@ -27,48 +50,50 @@ h1 {
    /* There is no logical place to put a h1 heading, but to keep with accessibility and SEO best practices this adds an unseen h1 */
 }
 
-h2 {
+h2{
    font-size: 40px;
    display: inline-flex;
-   border-bottom: 10px solid;
-   border-image-slice: 1;
    border-width: 5px;
-   border-image-source: linear-gradient(to right, red, purple);
-   width: 225px;
+   width: 40%;
    height: fit-content;
    justify-content: center;
-   align-self: flex-end;
+   align-self: center;
    margin: 0px 0px 20px 0px;
    padding: 7px;
+   background-color: rgba(0, 0, 0, 0.655);
 }
 
 /* HEADER - SOCIALS AND PAGE NAVIGATION */
 header {
    padding: 5px 0px;
-   position: fixed;
+   position: sticky;
    top: 0;
-   display: flex;
+   display:inline-flex;
+   justify-content:space-between;
+   width: 100%;
    height: 60px;
    background-color: rgba(0, 0, 0, 0.65);
    backdrop-filter: blur(20px);
    z-index: 9;
+   align-items: center;
+   justify-items: center;
 }
 
+/* NAV BAR */
 #socials {
    display: inline-flex;
    vertical-align: middle;
-   align-items: center;
 }
 
 #socials ul {
    display: flex;
+   list-style: none;
 }
 
 /* Width setting so that icons don't shift when they expand */
 #socials li {
    width: 60px;
    height: 60px;
-   display: inline-flex;
 }
 
 #socials a {
@@ -81,13 +106,13 @@ header {
 
 /* Fixed Icon Size */
 #socials img {
-   width: 42px;
+   width: auto;
    height: 42px;
 }
 
 /* Icon Expand when Hovered */
 #socials img:hover {
-   width: 46px;
+   width: auto;
    height: 46px;
 }
 
@@ -95,7 +120,6 @@ header {
 nav {
    display: inline-flex;
    justify-content: end;
-   align-items: center;
 }
 
 nav ul {
@@ -112,7 +136,6 @@ nav li {
 nav a {
    text-decoration: none;
    font-size: 22px;
-   color: white;
 }
 
 nav a:link {
@@ -124,34 +147,22 @@ nav a:hover {
 }
 
 /* PROFILE SECTION - Profile Picture and About Me */
-#profile {
-   display: flex;
-   height: 100vh;
-   justify-content: center;
-   align-items: center;
-}
-
-#profilepic {
-   display: inline-flex;
-   justify-content: end;
+#profile{
+   min-height: 100vh;
+   margin: auto inherit;
 }
 
 #profilepic img {
    width: 300px;
    height: 300px;
-   margin: 0px 20px 0px 0px;
+   margin: 40px;
 }
 
 #aboutme {
    color: white;
+   font-size: 20px;
    display: block;
    align-self: center;
-}
-
-#aboutme h1,
-#aboutme p {
-   display: flex;
-   justify-content: center;
 }
 
 #aboutme p span {
@@ -159,55 +170,108 @@ nav a:hover {
 }
 
 #aboutme .name {
-   font-size: 40px;
+   font-size: 60px;
    margin: 10px 0px 5px 0px;
 }
 
 .mystory {
-   padding: 30px 0px 0px 0px;
+   padding-top: 15px;
+   margin-top: 40px;
+   border-top-width: 5px;
+   line-height: 1.5rem;
 }
 
-.skillstest {
-   margin: 0% 5%;
-}
 
+/* #SKILLS SECTION */
 .skillbadge {
-
    width: fit-content;
    height: fit-content;
    margin: 0px;
    padding: 0px;
 }
 
-/* SKILLS SECTION */
-#skills {
-   display: grid;
-   height: 100vh;
-}
-
-#skills section {
-   align-self: flex-start;
-}
-
 #skills img {
-   display: grid;
+   display: block;
    height: 110px;
    width: auto;
    margin: 10px;
    padding: 10px;
 }
 
-#skills img:hover+p {
-   opacity: 1;
-}
-
 #skills p {
-   display: grid;
-   justify-content: center;
+   display: block;
    opacity: 0;
    transition: 0.5s;
 }
 
-footer {
-   margin: 100px;
+#skills img:hover+p {
+   opacity: 1;
+}
+
+/* #PROJECTS SECTION*/
+#projects article {
+   display: block;
+   width: 330px;
+   height: 330px;
+   margin: 40px 20px;
+   background-color: rgba(0, 0, 0, 0.65);
+   position: relative;
+   border-width: 3px;
+}
+
+#projects .firstproject{
+   max-width: 660px;
+   min-width: 330px;
+   width: 100%;
+}
+
+/* This h3 is very specific to projects, in future there may be more generic h3's */
+#projects h3 {
+   position: relative;
+   white-space: nowrap;
+   font-size: 1.25rem;
+   width: fit-content;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   padding: 10px;
+   background-color: black;
+   border-width: inherit;
+}
+
+#projects p{
+   display: flex;
+   padding: 0px 8px;
+   translate: 0px -10px;
+   justify-content: center;
+}
+
+#projects a {
+   display: block;
+   width: 100%;
+   height: 80%;
+   overflow: hidden;
+   position: absolute;
+   bottom: 0;
+}
+
+#projects img {
+   width: 100%;
+   height: 100%;
+   box-sizing:border-box;
+   padding: 15px;
+   object-fit: cover;
+   object-position: top center;
+   transition: all 2s ease-in-out;
+}
+
+#projects .placeholder{
+   width: 50%;
+   height: auto;
+   position: relative;
+   top: 16%;
+}
+
+/* Scrolls the webpage image on hover */
+#projects img:hover {
+   object-position: bottom center;
 }

@@ -1,5 +1,5 @@
 // Credit: https://stackoverflow.com/questions/6398526/javascript-jquery-or-something-to-change-text-every-some-seconds
-var text = ["Mechanical Engineer", "Test Engineer", "Full Stack Developer"];
+var text = ["Mechanical Engineer", "Software Test Engineer", "Aspiring Full Stack Developer"];
 var counter = 0;
 var elem = document.getElementById("changeText");
 elem.innerHTML = text[0];
