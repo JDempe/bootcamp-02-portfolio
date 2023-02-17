@@ -5,26 +5,30 @@
 
 /* REUSED STYLES */
 /* Red to Purple Gradient Border (Just Add Border Sides) */
+/* Added to all headers so I don't have to add class names to headers */
 .border,
 h1,
 h2,
 h3 {
    border-style: solid;
    border-image-slice: 1;
-   border-image-source: linear-gradient(to right, red, purple);
+   border-image-source: linear-gradient(to right, rgb(2, 155, 244), purple);
 }
 
 /* Section wrap, includes content and heading */
 .section-wrap {
-   display: block;
+   display: flex;
+   flex-direction: column;
    text-align: center;
-   margin: 10vh 15%;
+   justify-content: center;
+   padding: 10vh 20%;
+   box-sizing: border-box;
 }
 
 /* Wrapping for the sections containing the actual content (excludes headings) */
 .content-wrap {
-   display: flex;
-   justify-content: space-evenly;
+   display: inline-flex;
+   justify-content: center;
    flex-wrap: wrap;
    width: 100%;
 }
@@ -61,9 +65,10 @@ h2 {
    height: fit-content;
    justify-content: center;
    align-self: center;
-   margin: 0px 0px 20px 0px;
+   margin-bottom: 60px;
    padding: 7px;
    background-color: rgba(0, 0, 0, 0.655);
+   min-width: fit-content;
 }
 
 /* HEADER - SOCIALS AND PAGE NAVIGATION */
@@ -86,6 +91,7 @@ header {
 #socials {
    display: inline-flex;
    vertical-align: middle;
+   margin-left: 20px;
 }
 
 #socials ul {
@@ -123,16 +129,11 @@ header {
 nav {
    display: inline-flex;
    justify-content: end;
-}
-
-nav ul {
-   padding: 0px;
-   margin: 0px;
+   margin-right: 20px;
 }
 
 nav li {
    margin: 0px 15px;
-   color: white;
    display: inline-flex;
 }
 
@@ -151,14 +152,13 @@ nav a:hover {
 
 /* PROFILE SECTION - Profile Picture and About Me */
 #profile {
-   min-height: 100vh;
-   margin: auto inherit;
+   min-height: 85vh;
 }
 
 #profilepic img {
    width: 300px;
    height: 300px;
-   margin: 40px;
+   margin-bottom: 40px;
 }
 
 #aboutme {
@@ -184,29 +184,33 @@ nav a:hover {
    line-height: 1.5rem;
 }
 
-
 /* #SKILLS SECTION */
+/* Badges contain the img and label */
 .skillbadge {
-   width: fit-content;
-   height: fit-content;
-   margin: 0px;
-   padding: 0px;
-}
-
-#skills img {
-   display: block;
-   height: 110px;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   height: 20vh;
    width: auto;
    margin: 10px;
    padding: 10px;
 }
 
+#skills img {
+   display: block;
+   box-sizing: border-box;
+   width: auto;
+   height: 100%;
+}
+
 #skills p {
    display: block;
+   margin-top: 20px;
    opacity: 0;
    transition: 0.5s;
 }
 
+/* Label revealed on image hover */
 #skills img:hover+p {
    opacity: 1;
 }
@@ -216,15 +220,16 @@ nav a:hover {
    display: block;
    width: 330px;
    height: 330px;
-   margin: 40px 20px;
+   margin: 0px 20px 80px 20px;
    background-color: rgba(0, 0, 0, 0.65);
    position: relative;
    border-width: 3px;
+   min-width: 330px;
 }
 
+/* This class can be used to make bigger projects for any special ones! */
 #projects .firstproject {
    max-width: 660px;
-   min-width: 330px;
    width: 100%;
 }
 
@@ -268,8 +273,8 @@ nav a:hover {
 }
 
 #projects .placeholder {
-   width: 50%;
-   height: auto;
+   width: auto;
+   height: 50%;
    position: relative;
    top: 16%;
 }

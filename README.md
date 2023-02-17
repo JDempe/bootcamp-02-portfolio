@@ -25,23 +25,31 @@ https://jdempe.github.io/bootcamp-02-portfolio/
 There are several areas on the webpage that the user can interact with.
 - At the top right of the page in the header, navigation links will redirect the user to the related text lower on the page.
 
-![navigation links](./assets/images/documentation/navigation.png)
+<p align="center">
+  <img src="./assets/images/documentation/navigation.png?raw=true" alt="navigation links"/>
+</p>
 
 - In the top left corner are links that will take you to my Github, LinkedIn, and open an email addressed to me.  The contact options were added to the fixed header rather than only at the bottom of the page so that they are always available.
 
-![navigation links](./assets/images/documentation/socialmedialinks.png)
+<p align="center">
+  <img src="./assets/images/documentation/socialmedialinks.png?raw=true" alt="social media links"/>
+</p>
 
 - Hovering over the Skill Badges will reveal the tool's name.
 
-![skillbadges](./assets/images/documentation/skillbadges.png)
+<p align="center">
+  <img src="./assets/images/documentation/skillbadges.png?raw=true" alt="skill badges"/>
+</p>
 
 - Hovering over the projects will scroll down the webpage image.  Clicking on the webpage image will open it in a new tab.
-![project links](./assets/images/documentation/projects.png)
 
+<p align="center">
+  <img src="./assets/images/documentation/projects.png?raw=true" alt="project tiles"/>
+</p>
 
 ## Mock Up
 
-The mock up below was provided in the Bootcamp Homework materials.  The homework criteria required that much of the functionality of this mock up be present, but did not provide any restriction on aesthetics or layout.
+The mock up below was provided in the bootcamp homework materials.  The homework criteria required that much of the functionality of this mock up be present, but did not provide any restriction on aesthetics or layout.
 
 ![portfolio demo](./Assets/images/02-advanced-css-homework-demo.gif)
 
@@ -70,7 +78,7 @@ The below resources contributed to the decisions made on how to most effectively
 
 ### Collaborators
 
-The Slack channel east-coast-study-group that is part of the Bootcamp Slack group collaborated on this assignment by answering questions and providing feedback on ideas.  There was no peer code review on this assignment.
+The Slack channel east-coast-study-group that is part of the bootcamp Slack group collaborated on this assignment by answering questions and providing feedback on ideas.  There was no peer code review on this assignment.
 
 - George Johnson ([GitHub](https://github.com/GeorgeCJohnson))
 
