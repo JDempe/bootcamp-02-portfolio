@@ -3,9 +3,10 @@ var text = ["Mechanical Engineer", "Software Test Engineer", "Aspiring Full Stac
 var counter = 0;
 var elem = document.getElementById("changeText");
 elem.innerHTML = text[0];
-var opacity = Number(window.getComputedStyle(elem).getPropertyValue("opacity"));
 var inst = setInterval(change, 4000);
 
+
+// Every 4000ms, run this, which increments through the text array.  If it reaches the end it resets.
 function change() {
    counter++;
    if (counter >= text.length) {

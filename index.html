@@ -3,17 +3,14 @@
    <head>
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width, initial-scale=1">
-      <title>JDempe Profile</title>
+      <title>Joshua Dempe Portfolio</title>
       <link href="./assets/css/reset.css" rel="stylesheet">
-      <link
-         href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap-grid.min.css"
-         rel="stylesheet">
       <link href="./assets/css/style.css" rel="stylesheet">
       <link href="./assets/css/hover.css" rel="stylesheet">
    </head>
    <body>
       <header>
-         <!-- Top left, initials, socials -->
+         <!-- Top left, social media links -->
          <div id="socials">
             <ul>
                <li><a href="https://github.com/JDempe" target="_blank">
@@ -44,12 +41,14 @@
             </ul>
          </nav>
       </header>
+      <!-- Invisible header, see README -->
       <h1>Joshua Dempe Portfolio</h1>
       <!-- SECTION: Profile -->
       <section id="profile" class="section-wrap">
          <!-- Profile Picture -->
          <div id="profilepic">
-            <img src="./assets/images/profilepic.png">
+            <img src="./assets/images/profilepic.png"
+            alt="Profile Picture">
          </div>
          <!-- Hello, Name, About Me -->
          <div id="aboutme">
@@ -73,142 +72,200 @@
       </section>
 
       <!-- SECTION: Skills -->
-      <!-- TODO NESTED SECTION NEEDS FIXED -->
       <section id="skills" class="section-wrap">
          <h2>Skills</h2>
-         <section class="content-wrap">
+         <div class="content-wrap">
             <!-- HTML ICON -->
             <div class="skillbadge">
-               <img class="hvr-grow-rotate" src="./assets/images/html_icon.png">
+               <img class="hvr-grow-rotate" src="./assets/images/html_icon.png" alt="HTML Icon">
                <p>HTML</p>
             </div>
             <!-- CSS ICON -->
             <div class="skillbadge">
-               <img class="hvr-grow-rotate" src="./assets/images/css_icon.svg">
+               <img class="hvr-grow-rotate" src="./assets/images/css_icon.svg" alt="CSS Icon">
                <p>CSS</p>
             </div>
             <!-- JavaScript ICON -->
             <div class="skillbadge">
-               <img class="hvr-grow-rotate" src="./assets/images/js_icon.png">
+               <img class="hvr-grow-rotate" src="./assets/images/js_icon.png" alt="Javascript Icon">
                <p>JavaScript</p>
             </div>
             <!-- Bootstrap ICON -->
             <div class="skillbadge">
                <img class="hvr-grow-rotate"
-                  src="./assets/images/bootstrap_icon.png">
+                  src="./assets/images/bootstrap_icon.png" alt="Bootstrap Icon">
                <p>Bootstrap</p>
             </div>
+            <!-- AS I LEARN THE SKILLS I WILL UNCOMMENT THESE! -->
             <!--
             <!- - jQuery ICON - ->
             <div class="skillbadge">
                <img class="hvr-grow-rotate"
-                  src="./assets/images/jquery_icon.png">
+                  src="./assets/images/jquery_icon.png"
+                  alt="jQuery Icon">
                <p>jQuery</p>
             </div>
             <!- - Node.js ICON - ->
             <div class="skillbadge">
-               <img class="hvr-grow-rotate" src="./assets/images/node_icon.png">
+               <img class="hvr-grow-rotate" src="./assets/images/node_icon.png"
+               alt="Node.js Icon">
                <p>Node.js</p>
             </div>
             <!- - MongoDB ICON - ->
             <div class="skillbadge">
                <img class="hvr-grow-rotate"
-                  src="./assets/images/mongodb_icon.png">
+                  src="./assets/images/mongodb_icon.png"
+                  alt="MongoDB Icon">
                <p>MongoDB</p>
             </div>
             <!- - React ICON - ->
             <div class="skillbadge">
                <img class="hvr-grow-rotate"
-                  src="./assets/images/react_icon.svg.png">
+                  src="./assets/images/react_icon.svg.png"
+                  alt="React Icon">
                <p>React</p>
             </div>
             -->
             <!-- Docker ICON -->
             <div class="skillbadge">
                <img class="hvr-grow-rotate"
-                  src="./assets/images/docker_icon.png">
+                  src="./assets/images/docker_icon.png"
+                  alt="Docker Icon">
                <p>Docker</p>
             </div>
             <!-- Git ICON -->
             <div class="skillbadge">
                <img class="hvr-grow-rotate"
-                  src="./assets/images/git_icon_multicolor.svg">
+                  src="./assets/images/git_icon_multicolor.svg"
+                  alt="Git Icon">
                <p>Git</p>
             </div>
             <!-- Atlassian ICON -->
             <div class="skillbadge">
                <img class="hvr-grow-rotate"
-                  src="./assets/images/atlassian_icon.png">
+                  src="./assets/images/atlassian_icon.png"
+                  alt="Atlassian Icon">
                <p>Atlassian</p>
             </div>
 
-         </section>
+         </div>
       </section>
 
       <!-- SECTION: Projects  -->
-      <div id="projects" class="section-wrap">
+      <section id="projects" class="section-wrap">
          <!-- Title -->
-         <h2>Projects</h2>
+         <h2 class="hvr-shadow">Projects</h2>
          <!-- All Content -->
-         <section class="content-wrap">
-            <!-- Project Tile -->
-            <article class="border firstproject">
+         <!-- Important Project Tile(s) -->
+         <div class="content-wrap">
+            <article class="border firstproject hvr-grow">
                <h3>My Portfolio</h3>
                <p>My portfolio that will evolve as I gain more skills!</p>
                <a href="https://jdempe.github.io/bootcamp-02-portfolio/"
                   target=_blank>
                   <img
-                     src="./assets/images/jdempe.github.io_bootcamp-02-portfolio_.png"/>
+                     src="./assets/images/jdempe.github.io_bootcamp-02-portfolio_.png"
+                     alt="Portfolio Project Screenshot"/>
                </a>
             </article>
+            <article class="border firstproject hvr-grow">
+               <h3>Future Project</h3>
+               <p>Great things to come!</p>
+               <a>
+                  <img
+                     src="./assets/images/Time-PNG-HD-Quality.png"
+                     class="placeholder hvr-pulse-shrink"
+                     alt="Clock Icon, Indicating Future Content"/>
+               </a>
+            </article>
+         </div>
+         <div class="content-wrap">
             <!-- Project Tile -->
-            <article class="border">
+            <article class="border hvr-grow">
                <h3>Horiseon Refactor</h3>
                <p>A refactored site with improved accessibility and SEO!</p>
                <a href="https://jdempe.github.io/bootcamp-01-horiseon-refactor/"
                   target=_blank>
                   <img
-                     src="./assets/images/jdempe.github.io_bootcamp-01-horiseon-refactor_.png"/>
+                     src="./assets/images/jdempe.github.io_bootcamp-01-horiseon-refactor_.png"
+                     alt="Horiseon Project Screenshot"/>
                </a>
             </article>
             <!-- Project Tile -->
-            <article class="border">
+            <article class="border hvr-grow">
                <h3>Prework Study Guide</h3>
                <p>A study guide for any beginners learning web development! </p>
                <a
                   href="https://jdempe.github.io/bootcamp-00-prework-study-guide/"
                   target=_blank>
                   <img
-                     src="./assets/images/jdempe.github.io_bootcamp-00-prework-study-guide_.png"/>
+                     src="./assets/images/jdempe.github.io_bootcamp-00-prework-study-guide_.png"
+                     alt="Prework Project Screenshot"/>
                </a>
             </article>
 
             <!-- Project Tile -->
-            <article class="border">
+            <article class="border hvr-grow">
                <h3>Future Project</h3>
                <p>Great things to come!</p>
                <a>
                   <img
                      src="./assets/images/Time-PNG-HD-Quality.png"
-                     class="placeholder hvr-pulse-shrink"/>
+                     class="placeholder hvr-pulse-shrink"
+                     alt="Clock Icon, Indicating Future Content"/>
                </a>
             </article>
             <!-- Project Tile -->
-            <article class="border">
+            <article class="border hvr-grow">
                <h3>Future Project</h3>
                <p>Great things to come!</p>
                <a>
                   <img
                      src="./assets/images/Time-PNG-HD-Quality.png"
-                     class="placeholder hvr-pulse-shrink"/>
+                     class="placeholder hvr-pulse-shrink"
+                     alt="Clock Icon, Indicating Future Content"/>
                </a>
             </article>
-         </section>
-      </div>
+            <!-- Project Tile -->
+            <article class="border hvr-grow">
+               <h3>Future Project</h3>
+               <p>Great things to come!</p>
+               <a>
+                  <img
+                     src="./assets/images/Time-PNG-HD-Quality.png"
+                     class="placeholder hvr-pulse-shrink"
+                     alt="Clock Icon, Indicating Future Content"/>
+               </a>
+            </article>
+            <!-- Project Tile -->
+            <article class="border hvr-grow">
+               <h3>Future Project</h3>
+               <p>Great things to come!</p>
+               <a>
+                  <img
+                     src="./assets/images/Time-PNG-HD-Quality.png"
+                     class="placeholder hvr-pulse-shrink"
+                     alt="Clock Icon, Indicating Future Content"/>
+               </a>
+            </article>
+            <!-- Project Tile -->
+            <article class="border hvr-grow">
+               <h3>Future Project</h3>
+               <p>Great things to come!</p>
+               <a>
+                  <img
+                     src="./assets/images/Time-PNG-HD-Quality.png"
+                     class="placeholder hvr-pulse-shrink"
+                     alt="Clock Icon, Indicating Future Content"/>
+               </a>
+            </article>
+         </div>
 
-      <footer class="section-wrap">
-         <p> © Made with blood, sweat, and a lot of tears by Joshua Dempe</p>
-      </footer>
-      <script src="./assets/js/script.js"></script>
+      </section>
+         <footer class="section-wrap">
+            <p> © Made with blood, sweat, and a lot of tears by Joshua Dempe</p>
+         </footer>
+         <script src="./assets/js/script.js"></script>
+
    </body>
 </html>
