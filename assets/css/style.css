@@ -5,25 +5,28 @@
 
 /* REUSED STYLES */
 /* Red to Purple Gradient Border (Just Add Border Sides) */
-.border, h1, h2, h3{
+.border,
+h1,
+h2,
+h3 {
    border-style: solid;
    border-image-slice: 1;
    border-image-source: linear-gradient(to right, red, purple);
 }
 
 /* Section wrap, includes content and heading */
-.section-wrap{
+.section-wrap {
    display: block;
    text-align: center;
    margin: 10vh 15%;
 }
 
 /* Wrapping for the sections containing the actual content (excludes headings) */
-.content-wrap{
+.content-wrap {
    display: flex;
    justify-content: space-evenly;
    flex-wrap: wrap;
-   width: 100%;   
+   width: 100%;
 }
 
 /* SEMANTIC ELEMENT STYLES */
@@ -50,7 +53,7 @@ h1 {
    /* There is no logical place to put a h1 heading, but to keep with accessibility and SEO best practices this adds an unseen h1 */
 }
 
-h2{
+h2 {
    font-size: 40px;
    display: inline-flex;
    border-width: 5px;
@@ -68,8 +71,8 @@ header {
    padding: 5px 0px;
    position: sticky;
    top: 0;
-   display:inline-flex;
-   justify-content:space-between;
+   display: inline-flex;
+   justify-content: space-between;
    width: 100%;
    height: 60px;
    background-color: rgba(0, 0, 0, 0.65);
@@ -147,7 +150,7 @@ nav a:hover {
 }
 
 /* PROFILE SECTION - Profile Picture and About Me */
-#profile{
+#profile {
    min-height: 100vh;
    margin: auto inherit;
 }
@@ -219,7 +222,7 @@ nav a:hover {
    border-width: 3px;
 }
 
-#projects .firstproject{
+#projects .firstproject {
    max-width: 660px;
    min-width: 330px;
    width: 100%;
@@ -238,7 +241,7 @@ nav a:hover {
    border-width: inherit;
 }
 
-#projects p{
+#projects p {
    display: flex;
    padding: 0px 8px;
    translate: 0px -10px;
@@ -257,14 +260,14 @@ nav a:hover {
 #projects img {
    width: 100%;
    height: 100%;
-   box-sizing:border-box;
+   box-sizing: border-box;
    padding: 15px;
    object-fit: cover;
    object-position: top center;
    transition: all 2s ease-in-out;
 }
 
-#projects .placeholder{
+#projects .placeholder {
    width: 50%;
    height: auto;
    position: relative;
