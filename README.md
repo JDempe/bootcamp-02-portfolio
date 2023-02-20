@@ -58,7 +58,7 @@ The website I ultimately created did not closely match what I had mocked up for 
 ## Credits
 
 ### Resources
-The below resources contributed to the decisions made on how to most effectively refactor the webpage.
+The below resources contributed to the webpage.
 
 - [Matt Visiwig](https://twitter.com/MattVisiwig) created an SVG background creator that provides many free options.  My background image was created from [this](https://www.svgbackgrounds.com/) tool.
 
